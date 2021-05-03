@@ -1,3 +1,5 @@
+# 4번 semdmail.py
+
 import os.path
 from smtplib import SMTP
 from email.mime.text import MIMEText
