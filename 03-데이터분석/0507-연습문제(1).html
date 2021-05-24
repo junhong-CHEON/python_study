@@ -1,0 +1,1897 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><style>@font-face {
+  font-family: octicons-link;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+body {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    color:#333;
+    background:#fff;
+}
+
+body .markdown-body {
+    padding: 45px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    word-wrap: break-word;
+}
+
+.markdown-body .octicon-link:before {
+  font: normal normal normal 16px/1 octicons-link;
+  display: inline-block;
+  text-decoration: none;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  content: '\f05c';
+  vertical-align: middle;
+}
+
+.markdown-body .anchor {
+  float: left;
+  line-height: 1;
+  margin-left: -20px;
+  padding-right: 4px;
+}
+
+.markdown-body .anchor:focus {
+  outline: none;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+  color: #1b1f23;
+  vertical-align: middle;
+  visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+  visibility: visible;
+}
+
+.markdown-body {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #24292e;
+  line-height: 1.5;
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+  font-size: 16px;
+  line-height: 1.5;
+  word-wrap: break-word;
+}
+
+.markdown-body .pl-c {
+  color: #6a737d;
+}
+
+.markdown-body .pl-c1,
+.markdown-body .pl-s .pl-v {
+  color: #005cc5;
+}
+
+.markdown-body .pl-e,
+.markdown-body .pl-en {
+  color: #6f42c1;
+}
+
+.markdown-body .pl-s .pl-s1,
+.markdown-body .pl-smi {
+  color: #24292e;
+}
+
+.markdown-body .pl-ent {
+  color: #22863a;
+}
+
+.markdown-body .pl-k {
+  color: #d73a49;
+}
+
+.markdown-body .pl-pds,
+.markdown-body .pl-s,
+.markdown-body .pl-s .pl-pse .pl-s1,
+.markdown-body .pl-sr,
+.markdown-body .pl-sr .pl-cce,
+.markdown-body .pl-sr .pl-sra,
+.markdown-body .pl-sr .pl-sre {
+  color: #032f62;
+}
+
+.markdown-body .pl-smw,
+.markdown-body .pl-v {
+  color: #e36209;
+}
+
+.markdown-body .pl-bu {
+  color: #b31d28;
+}
+
+.markdown-body .pl-ii {
+  background-color: #b31d28;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2 {
+  background-color: #d73a49;
+  color: #fafbfc;
+}
+
+.markdown-body .pl-c2:before {
+  content: "^M";
+}
+
+.markdown-body .pl-sr .pl-cce {
+  color: #22863a;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ml {
+  color: #735c0f;
+}
+
+.markdown-body .pl-mh,
+.markdown-body .pl-mh .pl-en,
+.markdown-body .pl-ms {
+  color: #005cc5;
+  font-weight: 700;
+}
+
+.markdown-body .pl-mi {
+  color: #24292e;
+  font-style: italic;
+}
+
+.markdown-body .pl-mb {
+  color: #24292e;
+  font-weight: 700;
+}
+
+.markdown-body .pl-md {
+  background-color: #ffeef0;
+  color: #b31d28;
+}
+
+.markdown-body .pl-mi1 {
+  background-color: #f0fff4;
+  color: #22863a;
+}
+
+.markdown-body .pl-mc {
+  background-color: #ffebda;
+  color: #e36209;
+}
+
+.markdown-body .pl-mi2 {
+  background-color: #005cc5;
+  color: #f6f8fa;
+}
+
+.markdown-body .pl-mdr {
+  color: #6f42c1;
+  font-weight: 700;
+}
+
+.markdown-body .pl-ba {
+  color: #586069;
+}
+
+.markdown-body .pl-sg {
+  color: #959da5;
+}
+
+.markdown-body .pl-corl {
+  color: #032f62;
+  text-decoration: underline;
+}
+
+.markdown-body details {
+  display: block;
+}
+
+.markdown-body summary {
+  display: list-item;
+}
+
+.markdown-body a {
+  background-color: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline-width: 0;
+}
+
+.markdown-body strong {
+  font-weight: inherit;
+  font-weight: bolder;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+.markdown-body img {
+  border-style: none;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+  font-family: monospace,monospace;
+  font-size: 1em;
+}
+
+.markdown-body hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+}
+
+.markdown-body input {
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body input {
+  overflow: visible;
+}
+
+.markdown-body [type=checkbox] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body * {
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+.markdown-body a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+.markdown-body a:hover {
+  text-decoration: underline;
+}
+
+.markdown-body strong {
+  font-weight: 600;
+}
+
+.markdown-body hr {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #dfe2e5;
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+}
+
+.markdown-body hr:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body hr:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body details summary {
+  cursor: pointer;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body h1 {
+  font-size: 32px;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  font-weight: 600;
+}
+
+.markdown-body h2 {
+  font-size: 24px;
+}
+
+.markdown-body h3 {
+  font-size: 20px;
+}
+
+.markdown-body h3,
+.markdown-body h4 {
+  font-weight: 600;
+}
+
+.markdown-body h4 {
+  font-size: 16px;
+}
+
+.markdown-body h5 {
+  font-size: 14px;
+}
+
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+}
+
+.markdown-body h6 {
+  font-size: 12px;
+}
+
+.markdown-body p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-left: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ol ol ol,
+.markdown-body ol ul ol,
+.markdown-body ul ol ol,
+.markdown-body ul ul ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre {
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body input::-webkit-inner-spin-button,
+.markdown-body input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.markdown-body .border {
+  border: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .border-0 {
+  border: 0!important;
+}
+
+.markdown-body .border-bottom {
+  border-bottom: 1px solid #e1e4e8!important;
+}
+
+.markdown-body .rounded-1 {
+  border-radius: 3px!important;
+}
+
+.markdown-body .bg-white {
+  background-color: #fff!important;
+}
+
+.markdown-body .bg-gray-light {
+  background-color: #fafbfc!important;
+}
+
+.markdown-body .text-gray-light {
+  color: #6a737d!important;
+}
+
+.markdown-body .mb-0 {
+  margin-bottom: 0!important;
+}
+
+.markdown-body .my-2 {
+  margin-bottom: 8px!important;
+  margin-top: 8px!important;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .py-0 {
+  padding-bottom: 0!important;
+  padding-top: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .py-2 {
+  padding-bottom: 8px!important;
+  padding-top: 8px!important;
+}
+
+.markdown-body .pl-3,
+.markdown-body .px-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .px-3 {
+  padding-right: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .f6 {
+  font-size: 12px!important;
+}
+
+.markdown-body .lh-condensed {
+  line-height: 1.25!important;
+}
+
+.markdown-body .text-bold {
+  font-weight: 600!important;
+}
+
+.markdown-body:before {
+  content: "";
+  display: table;
+}
+
+.markdown-body:after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.markdown-body>:first-child {
+  margin-top: 0!important;
+}
+
+.markdown-body>:last-child {
+  margin-bottom: 0!important;
+}
+
+.markdown-body a:not([href]) {
+  color: inherit;
+  text-decoration: none;
+}
+
+.markdown-body blockquote,
+.markdown-body dl,
+.markdown-body ol,
+.markdown-body p,
+.markdown-body pre,
+.markdown-body table,
+.markdown-body ul {
+  margin-bottom: 16px;
+  margin-top: 0;
+}
+
+.markdown-body hr {
+  background-color: #e1e4e8;
+  border: 0;
+  height: .25em;
+  margin: 24px 0;
+  padding: 0;
+}
+
+.markdown-body blockquote {
+  border-left: .25em solid #dfe2e5;
+  color: #6a737d;
+  padding: 0 1em;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #c6cbd1;
+  border-bottom-color: #959da5;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #959da5;
+  color: #444d56;
+  display: inline-block;
+  font-size: 11px;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-weight: 600;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  margin-top: 24px;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+}
+
+.markdown-body h1,
+.markdown-body h2 {
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: .3em;
+}
+
+.markdown-body h2 {
+  font-size: 1.5em;
+}
+
+.markdown-body h3 {
+  font-size: 1.25em;
+}
+
+.markdown-body h4 {
+  font-size: 1em;
+}
+
+.markdown-body h5 {
+  font-size: .875em;
+}
+
+.markdown-body h6 {
+  color: #6a737d;
+  font-size: .85em;
+}
+
+.markdown-body ol,
+.markdown-body ul {
+  padding-left: 2em;
+}
+
+.markdown-body ol ol,
+.markdown-body ol ul,
+.markdown-body ul ol,
+.markdown-body ul ul {
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.markdown-body li {
+  word-wrap: break-all;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body li+li {
+  margin-top: .25em;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  font-size: 1em;
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 16px;
+  padding: 0;
+}
+
+.markdown-body dl dd {
+  margin-bottom: 16px;
+  padding: 0 16px;
+}
+
+.markdown-body table {
+  display: block;
+  overflow: auto;
+  width: 100%;
+}
+
+.markdown-body table th {
+  font-weight: 600;
+}
+
+.markdown-body table td,
+.markdown-body table th {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #c6cbd1;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f6f8fa;
+}
+
+.markdown-body img {
+  background-color: #fff;
+  box-sizing: content-box;
+  max-width: 100%;
+}
+
+.markdown-body img[align=right] {
+  padding-left: 20px;
+}
+
+.markdown-body img[align=left] {
+  padding-right: 20px;
+}
+
+.markdown-body code {
+  background-color: rgba(27,31,35,.05);
+  border-radius: 3px;
+  font-size: 85%;
+  margin: 0;
+  padding: .2em .4em;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre>code {
+  background: transparent;
+  border: 0;
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  word-break: normal;
+}
+
+.markdown-body .highlight {
+  margin-bottom: 16px;
+}
+
+.markdown-body .highlight pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+  background-color: #f6f8fa;
+  border-radius: 3px;
+  font-size: 85%;
+  line-height: 1.45;
+  overflow: auto;
+  padding: 16px;
+}
+
+.markdown-body pre code {
+  background-color: transparent;
+  border: 0;
+  display: inline;
+  line-height: inherit;
+  margin: 0;
+  max-width: auto;
+  overflow: visible;
+  padding: 0;
+  word-wrap: normal;
+}
+
+.markdown-body .commit-tease-sha {
+  color: #444d56;
+  display: inline-block;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 90%;
+}
+
+.markdown-body .blob-wrapper {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.markdown-body .blob-wrapper-embedded {
+  max-height: 240px;
+  overflow-y: auto;
+}
+
+.markdown-body .blob-num {
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  color: rgba(27,31,35,.3);
+  cursor: pointer;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  line-height: 20px;
+  min-width: 50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: right;
+  user-select: none;
+  vertical-align: top;
+  white-space: nowrap;
+  width: 1%;
+}
+
+.markdown-body .blob-num:hover {
+  color: rgba(27,31,35,.6);
+}
+
+.markdown-body .blob-num:before {
+  content: attr(data-line-number);
+}
+
+.markdown-body .blob-code {
+  line-height: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  vertical-align: top;
+}
+
+.markdown-body .blob-code-inner {
+  color: #24292e;
+  font-family: SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  font-size: 12px;
+  overflow: visible;
+  white-space: pre;
+  word-wrap: normal;
+}
+
+.markdown-body .pl-token.active,
+.markdown-body .pl-token:hover {
+  background: #ffea7f;
+  cursor: pointer;
+}
+
+.markdown-body kbd {
+  background-color: #fafbfc;
+  border: 1px solid #d1d5da;
+  border-bottom-color: #c6cbd1;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 #c6cbd1;
+  color: #444d56;
+  display: inline-block;
+  font: 11px SFMono-Regular,Consolas,Liberation Mono,Menlo,Courier,monospace;
+  line-height: 10px;
+  padding: 3px 5px;
+  vertical-align: middle;
+}
+
+.markdown-body :checked+.radio-label {
+  border-color: #0366d6;
+  position: relative;
+  z-index: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="1"] {
+  -moz-tab-size: 1;
+  tab-size: 1;
+}
+
+.markdown-body .tab-size[data-tab-size="2"] {
+  -moz-tab-size: 2;
+  tab-size: 2;
+}
+
+.markdown-body .tab-size[data-tab-size="3"] {
+  -moz-tab-size: 3;
+  tab-size: 3;
+}
+
+.markdown-body .tab-size[data-tab-size="4"] {
+  -moz-tab-size: 4;
+  tab-size: 4;
+}
+
+.markdown-body .tab-size[data-tab-size="5"] {
+  -moz-tab-size: 5;
+  tab-size: 5;
+}
+
+.markdown-body .tab-size[data-tab-size="6"] {
+  -moz-tab-size: 6;
+  tab-size: 6;
+}
+
+.markdown-body .tab-size[data-tab-size="7"] {
+  -moz-tab-size: 7;
+  tab-size: 7;
+}
+
+.markdown-body .tab-size[data-tab-size="8"] {
+  -moz-tab-size: 8;
+  tab-size: 8;
+}
+
+.markdown-body .tab-size[data-tab-size="9"] {
+  -moz-tab-size: 9;
+  tab-size: 9;
+}
+
+.markdown-body .tab-size[data-tab-size="10"] {
+  -moz-tab-size: 10;
+  tab-size: 10;
+}
+
+.markdown-body .tab-size[data-tab-size="11"] {
+  -moz-tab-size: 11;
+  tab-size: 11;
+}
+
+.markdown-body .tab-size[data-tab-size="12"] {
+  -moz-tab-size: 12;
+  tab-size: 12;
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 .2em .25em -1.6em;
+  vertical-align: middle;
+}
+
+.markdown-body hr {
+  border-bottom-color: #eee;
+}
+
+.markdown-body .pl-0 {
+  padding-left: 0!important;
+}
+
+.markdown-body .pl-1 {
+  padding-left: 4px!important;
+}
+
+.markdown-body .pl-2 {
+  padding-left: 8px!important;
+}
+
+.markdown-body .pl-3 {
+  padding-left: 16px!important;
+}
+
+.markdown-body .pl-4 {
+  padding-left: 24px!important;
+}
+
+.markdown-body .pl-5 {
+  padding-left: 32px!important;
+}
+
+.markdown-body .pl-6 {
+  padding-left: 40px!important;
+}
+
+.markdown-body .pl-7 {
+  padding-left: 48px!important;
+}
+
+.markdown-body .pl-8 {
+  padding-left: 64px!important;
+}
+
+.markdown-body .pl-9 {
+  padding-left: 80px!important;
+}
+
+.markdown-body .pl-10 {
+  padding-left: 96px!important;
+}
+
+.markdown-body .pl-11 {
+  padding-left: 112px!important;
+}
+
+.markdown-body .pl-12 {
+  padding-left: 128px!important;
+}
+</style><title>Untitled4</title></head><body><article class="markdown-body"><h1>
+<a id="user-content-연습문제-0507-1" class="anchor" href="#%EC%97%B0%EC%8A%B5%EB%AC%B8%EC%A0%9C-0507-1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>연습문제 0507-1</h1>
+<h2>
+<a id="user-content-패키지-참조" class="anchor" href="#%ED%8C%A8%ED%82%A4%EC%A7%80-%EC%B0%B8%EC%A1%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>패키지 참조</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-k">import</span> <span class="pl-s1">pymysql</span>
+<span class="pl-k">from</span> <span class="pl-s1">sqlalchemy</span> <span class="pl-k">import</span> <span class="pl-s1">create_engine</span>
+<span class="pl-k">import</span> <span class="pl-s1">pandas</span> <span class="pl-k">as</span> <span class="pl-s1">pd</span>
+<span class="pl-k">from</span> <span class="pl-s1">pandas</span> <span class="pl-k">import</span> <span class="pl-v">DataFrame</span>
+<span class="pl-k">from</span> <span class="pl-s1">pandas</span> <span class="pl-k">import</span> <span class="pl-s1">merge</span>
+<span class="pl-k">from</span> <span class="pl-s1">matplotlib</span> <span class="pl-k">import</span> <span class="pl-s1">pyplot</span>
+<span class="pl-k">import</span> <span class="pl-s1">urllib</span></pre></div>
+<h2>
+<a id="user-content-데이터베이스-접속-정보설정" class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%91%EC%86%8D-%EC%A0%95%EB%B3%B4%EC%84%A4%EC%A0%95" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>데이터베이스 접속 정보설정</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-v">HOSTNAME</span> <span class="pl-c1">=</span> <span class="pl-s">"localhost"</span>
+<span class="pl-v">PORT</span>     <span class="pl-c1">=</span> <span class="pl-c1">3306</span>
+<span class="pl-v">USERNAME</span> <span class="pl-c1">=</span> <span class="pl-s">"root"</span>
+<span class="pl-v">PASSWORD</span> <span class="pl-c1">=</span> <span class="pl-s">"123qwe!@#"</span>
+<span class="pl-v">DATABASE</span> <span class="pl-c1">=</span> <span class="pl-s">"myschool"</span>
+<span class="pl-v">CHARSET1</span>  <span class="pl-c1">=</span> <span class="pl-s">"utf8"</span>     <span class="pl-c"># MySQL에서 사용할 캐릭터셋 이름</span>
+<span class="pl-v">CHARSET2</span>  <span class="pl-c1">=</span> <span class="pl-s">"utf-8"</span>    <span class="pl-c"># Python에서 사용할 캐릭터셋 이름</span></pre></div>
+<h2>
+<a id="user-content-데이터베이스-접속-문자열-생성" class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%91%EC%86%8D-%EB%AC%B8%EC%9E%90%EC%97%B4-%EC%83%9D%EC%84%B1" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>데이터베이스 접속 문자열 생성</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">con_str_fmt</span> <span class="pl-c1">=</span> <span class="pl-s">"mysql+mysqldb://{0}:{1}@{2}:{3}/{4}?charset={5}"</span>
+
+<span class="pl-c"># 비밀번호에 따옴표나 @ 등의 특수문자가 포함되어 있을 경우 urllib.parse.quote() 함수로 처리후 적용</span>
+<span class="pl-s1">con_str</span> <span class="pl-c1">=</span> <span class="pl-s1">con_str_fmt</span>.<span class="pl-en">format</span>(<span class="pl-v">USERNAME</span>, <span class="pl-s1">urllib</span>.<span class="pl-s1">parse</span>.<span class="pl-en">quote</span>(<span class="pl-v">PASSWORD</span>), 
+                             <span class="pl-v">HOSTNAME</span>, <span class="pl-v">PORT</span>, <span class="pl-v">DATABASE</span>, <span class="pl-v">CHARSET1</span>)
+<span class="pl-s1">con_str</span></pre></div>
+<pre><code>'mysql+mysqldb://root:123qwe%21%40%23@localhost:3306/myschool?charset=utf8'
+</code></pre>
+<h2>
+<a id="user-content-데이터베이스-접속을-위한-모듈-설치" class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%91%EC%86%8D%EC%9D%84-%EC%9C%84%ED%95%9C-%EB%AA%A8%EB%93%88-%EC%84%A4%EC%B9%98" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>데이터베이스 접속을 위한 모듈 설치</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">pymysql</span>.<span class="pl-en">install_as_MySQLdb</span>()
+<span class="pl-k">import</span> <span class="pl-v">MySQLdb</span></pre></div>
+<h2>
+<a id="user-content-데이터베이스-접속" class="anchor" href="#%EB%8D%B0%EC%9D%B4%ED%84%B0%EB%B2%A0%EC%9D%B4%EC%8A%A4-%EC%A0%91%EC%86%8D" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>데이터베이스 접속</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">engine</span> <span class="pl-c1">=</span> <span class="pl-en">create_engine</span>(<span class="pl-s1">con_str</span>, <span class="pl-s1">encoding</span><span class="pl-c1">=</span><span class="pl-v">CHARSET2</span>)
+<span class="pl-s1">conn</span> <span class="pl-c1">=</span> <span class="pl-s1">engine</span>.<span class="pl-en">connect</span>()</pre></div>
+<h2>
+<a id="user-content-학생-테이블을-데이터-마트로-가져오기" class="anchor" href="#%ED%95%99%EC%83%9D-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%ED%8A%B8%EB%A1%9C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>학생 테이블을 데이터 마트로 가져오기</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">df4</span> <span class="pl-c1">=</span> <span class="pl-s1">pd</span>.<span class="pl-en">read_sql_table</span>(<span class="pl-s">"student"</span>, <span class="pl-s1">index_col</span><span class="pl-c1">=</span><span class="pl-s">'studno'</span>, <span class="pl-s1">con</span><span class="pl-c1">=</span><span class="pl-s1">conn</span>)
+<span class="pl-s1">df4</span></pre></div>
+<div>
+<table border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th>name</th>
+      <th>userid</th>
+      <th>grade</th>
+      <th>idnum</th>
+      <th>birthdate</th>
+      <th>tel</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>deptno</th>
+      <th>profno</th>
+    </tr>
+    <tr>
+      <th>studno</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10101</th>
+      <td>전인하</td>
+      <td>jun123</td>
+      <td>4</td>
+      <td>7907021369824</td>
+      <td>1979-07-02</td>
+      <td>051)781-2158</td>
+      <td>176</td>
+      <td>72</td>
+      <td>101</td>
+      <td>9903.0</td>
+    </tr>
+    <tr>
+      <th>10102</th>
+      <td>박미경</td>
+      <td>ansel414</td>
+      <td>1</td>
+      <td>8405162123648</td>
+      <td>1984-05-16</td>
+      <td>055)261-8947</td>
+      <td>168</td>
+      <td>52</td>
+      <td>101</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10103</th>
+      <td>김영균</td>
+      <td>mandu</td>
+      <td>3</td>
+      <td>8103211063421</td>
+      <td>1981-03-21</td>
+      <td>051)824-9637</td>
+      <td>170</td>
+      <td>88</td>
+      <td>101</td>
+      <td>9906.0</td>
+    </tr>
+    <tr>
+      <th>10104</th>
+      <td>지은경</td>
+      <td>gomo00</td>
+      <td>2</td>
+      <td>8004122298371</td>
+      <td>1980-04-12</td>
+      <td>055)418-9627</td>
+      <td>161</td>
+      <td>42</td>
+      <td>101</td>
+      <td>9907.0</td>
+    </tr>
+    <tr>
+      <th>10105</th>
+      <td>임유진</td>
+      <td>youjin12</td>
+      <td>2</td>
+      <td>8301212196482</td>
+      <td>1983-01-21</td>
+      <td>02)312-9838</td>
+      <td>171</td>
+      <td>54</td>
+      <td>101</td>
+      <td>9907.0</td>
+    </tr>
+    <tr>
+      <th>10106</th>
+      <td>서재진</td>
+      <td>seolly</td>
+      <td>1</td>
+      <td>8511291186273</td>
+      <td>1985-11-29</td>
+      <td>051)239-4861</td>
+      <td>186</td>
+      <td>72</td>
+      <td>101</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10107</th>
+      <td>이광훈</td>
+      <td>huriky</td>
+      <td>4</td>
+      <td>8109131276431</td>
+      <td>1981-09-13</td>
+      <td>055)736-4981</td>
+      <td>175</td>
+      <td>92</td>
+      <td>101</td>
+      <td>9903.0</td>
+    </tr>
+    <tr>
+      <th>10108</th>
+      <td>류민정</td>
+      <td>cleansky</td>
+      <td>2</td>
+      <td>8108192157498</td>
+      <td>1981-08-19</td>
+      <td>055)248-3679</td>
+      <td>162</td>
+      <td>72</td>
+      <td>101</td>
+      <td>9907.0</td>
+    </tr>
+    <tr>
+      <th>10201</th>
+      <td>김진영</td>
+      <td>simply</td>
+      <td>2</td>
+      <td>8206062186327</td>
+      <td>1982-06-06</td>
+      <td>055)419-6328</td>
+      <td>164</td>
+      <td>48</td>
+      <td>102</td>
+      <td>9905.0</td>
+    </tr>
+    <tr>
+      <th>10202</th>
+      <td>오유석</td>
+      <td>yousuk</td>
+      <td>4</td>
+      <td>7709121128379</td>
+      <td>1977-09-12</td>
+      <td>051)724-9618</td>
+      <td>177</td>
+      <td>92</td>
+      <td>102</td>
+      <td>9905.0</td>
+    </tr>
+    <tr>
+      <th>10203</th>
+      <td>하나리</td>
+      <td>hanal</td>
+      <td>1</td>
+      <td>8501092378641</td>
+      <td>1985-01-09</td>
+      <td>055)296-3784</td>
+      <td>160</td>
+      <td>68</td>
+      <td>102</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10204</th>
+      <td>윤진욱</td>
+      <td>samba7</td>
+      <td>3</td>
+      <td>7904021358671</td>
+      <td>1979-04-02</td>
+      <td>053)487-2698</td>
+      <td>171</td>
+      <td>70</td>
+      <td>102</td>
+      <td>9905.0</td>
+    </tr>
+    <tr>
+      <th>20101</th>
+      <td>이동훈</td>
+      <td>dals</td>
+      <td>1</td>
+      <td>8312101128467</td>
+      <td>1983-12-10</td>
+      <td>055)426-1752</td>
+      <td>172</td>
+      <td>64</td>
+      <td>201</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20102</th>
+      <td>박동진</td>
+      <td>ping2</td>
+      <td>1</td>
+      <td>8511241639826</td>
+      <td>1985-11-24</td>
+      <td>051)742-6384</td>
+      <td>182</td>
+      <td>70</td>
+      <td>201</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20103</th>
+      <td>김진경</td>
+      <td>lovely</td>
+      <td>2</td>
+      <td>8302282169387</td>
+      <td>1983-02-28</td>
+      <td>052)175-3941</td>
+      <td>166</td>
+      <td>51</td>
+      <td>201</td>
+      <td>9902.0</td>
+    </tr>
+    <tr>
+      <th>20104</th>
+      <td>조명훈</td>
+      <td>rader214</td>
+      <td>1</td>
+      <td>8412141254963</td>
+      <td>1984-12-14</td>
+      <td>02)785-6984</td>
+      <td>184</td>
+      <td>62</td>
+      <td>201</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2>
+<a id="user-content-교수-테이블을-데이터-마트로-가져오기" class="anchor" href="#%EA%B5%90%EC%88%98-%ED%85%8C%EC%9D%B4%EB%B8%94%EC%9D%84-%EB%8D%B0%EC%9D%B4%ED%84%B0-%EB%A7%88%ED%8A%B8%EB%A1%9C-%EA%B0%80%EC%A0%B8%EC%98%A4%EA%B8%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>교수 테이블을 데이터 마트로 가져오기</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">df5</span> <span class="pl-c1">=</span> <span class="pl-s1">pd</span>.<span class="pl-en">read_sql_table</span>(<span class="pl-s">"professor"</span>, <span class="pl-s1">index_col</span><span class="pl-c1">=</span><span class="pl-s">'profno'</span>, <span class="pl-s1">con</span><span class="pl-c1">=</span><span class="pl-s1">conn</span>)
+<span class="pl-s1">df5</span></pre></div>
+<div>
+<table border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th>name</th>
+      <th>userid</th>
+      <th>position</th>
+      <th>sal</th>
+      <th>hiredate</th>
+      <th>comm</th>
+      <th>deptno</th>
+    </tr>
+    <tr>
+      <th>profno</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>9901</th>
+      <td>김도훈</td>
+      <td>capool</td>
+      <td>교수</td>
+      <td>500</td>
+      <td>1982-06-12</td>
+      <td>20.0</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>9902</th>
+      <td>이재우</td>
+      <td>sweat413</td>
+      <td>조교수</td>
+      <td>320</td>
+      <td>1995-04-12</td>
+      <td>NaN</td>
+      <td>201</td>
+    </tr>
+    <tr>
+      <th>9903</th>
+      <td>성연희</td>
+      <td>pascal</td>
+      <td>조교수</td>
+      <td>360</td>
+      <td>1993-03-17</td>
+      <td>15.0</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>9904</th>
+      <td>염일웅</td>
+      <td>blue77</td>
+      <td>전임강사</td>
+      <td>240</td>
+      <td>1998-10-11</td>
+      <td>NaN</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <th>9905</th>
+      <td>권혁일</td>
+      <td>refresh</td>
+      <td>교수</td>
+      <td>450</td>
+      <td>1986-02-11</td>
+      <td>25.0</td>
+      <td>102</td>
+    </tr>
+    <tr>
+      <th>9906</th>
+      <td>이만식</td>
+      <td>pocari</td>
+      <td>부교수</td>
+      <td>420</td>
+      <td>1988-07-11</td>
+      <td>NaN</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>9907</th>
+      <td>전은지</td>
+      <td>totoro</td>
+      <td>전임강사</td>
+      <td>210</td>
+      <td>2001-05-11</td>
+      <td>NaN</td>
+      <td>101</td>
+    </tr>
+    <tr>
+      <th>9908</th>
+      <td>남은혁</td>
+      <td>bird13</td>
+      <td>부교수</td>
+      <td>400</td>
+      <td>1990-10-18</td>
+      <td>17.0</td>
+      <td>202</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2>
+<a id="user-content-테이블간-병합하기" class="anchor" href="#%ED%85%8C%EC%9D%B4%EB%B8%94%EA%B0%84-%EB%B3%91%ED%95%A9%ED%95%98%EA%B8%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>테이블간 병합하기</h2>
+<p>병합기준을 지정해야 한다.</p>
+<ul>
+<li>왼쪽은 profno 컬럼, 오른쪽은 인덱스</li>
+</ul>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">df6</span> <span class="pl-c1">=</span> <span class="pl-en">merge</span>(<span class="pl-s1">df4</span>, <span class="pl-s1">df5</span>, <span class="pl-s1">how</span><span class="pl-c1">=</span><span class="pl-s">'left'</span>, <span class="pl-s1">left_on</span><span class="pl-c1">=</span>[<span class="pl-s">'profno'</span>], <span class="pl-s1">right_index</span><span class="pl-c1">=</span><span class="pl-c1">True</span>)
+<span class="pl-s1">df6</span></pre></div>
+<div>
+<table border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th>name_x</th>
+      <th>userid_x</th>
+      <th>grade</th>
+      <th>idnum</th>
+      <th>birthdate</th>
+      <th>tel</th>
+      <th>height</th>
+      <th>weight</th>
+      <th>deptno_x</th>
+      <th>profno</th>
+      <th>name_y</th>
+      <th>userid_y</th>
+      <th>position</th>
+      <th>sal</th>
+      <th>hiredate</th>
+      <th>comm</th>
+      <th>deptno_y</th>
+    </tr>
+    <tr>
+      <th>studno</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10101</th>
+      <td>전인하</td>
+      <td>jun123</td>
+      <td>4</td>
+      <td>7907021369824</td>
+      <td>1979-07-02</td>
+      <td>051)781-2158</td>
+      <td>176</td>
+      <td>72</td>
+      <td>101</td>
+      <td>9903.0</td>
+      <td>성연희</td>
+      <td>pascal</td>
+      <td>조교수</td>
+      <td>360.0</td>
+      <td>1993-03-17</td>
+      <td>15.0</td>
+      <td>101.0</td>
+    </tr>
+    <tr>
+      <th>10102</th>
+      <td>박미경</td>
+      <td>ansel414</td>
+      <td>1</td>
+      <td>8405162123648</td>
+      <td>1984-05-16</td>
+      <td>055)261-8947</td>
+      <td>168</td>
+      <td>52</td>
+      <td>101</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10103</th>
+      <td>김영균</td>
+      <td>mandu</td>
+      <td>3</td>
+      <td>8103211063421</td>
+      <td>1981-03-21</td>
+      <td>051)824-9637</td>
+      <td>170</td>
+      <td>88</td>
+      <td>101</td>
+      <td>9906.0</td>
+      <td>이만식</td>
+      <td>pocari</td>
+      <td>부교수</td>
+      <td>420.0</td>
+      <td>1988-07-11</td>
+      <td>NaN</td>
+      <td>101.0</td>
+    </tr>
+    <tr>
+      <th>10104</th>
+      <td>지은경</td>
+      <td>gomo00</td>
+      <td>2</td>
+      <td>8004122298371</td>
+      <td>1980-04-12</td>
+      <td>055)418-9627</td>
+      <td>161</td>
+      <td>42</td>
+      <td>101</td>
+      <td>9907.0</td>
+      <td>전은지</td>
+      <td>totoro</td>
+      <td>전임강사</td>
+      <td>210.0</td>
+      <td>2001-05-11</td>
+      <td>NaN</td>
+      <td>101.0</td>
+    </tr>
+    <tr>
+      <th>10105</th>
+      <td>임유진</td>
+      <td>youjin12</td>
+      <td>2</td>
+      <td>8301212196482</td>
+      <td>1983-01-21</td>
+      <td>02)312-9838</td>
+      <td>171</td>
+      <td>54</td>
+      <td>101</td>
+      <td>9907.0</td>
+      <td>전은지</td>
+      <td>totoro</td>
+      <td>전임강사</td>
+      <td>210.0</td>
+      <td>2001-05-11</td>
+      <td>NaN</td>
+      <td>101.0</td>
+    </tr>
+    <tr>
+      <th>10106</th>
+      <td>서재진</td>
+      <td>seolly</td>
+      <td>1</td>
+      <td>8511291186273</td>
+      <td>1985-11-29</td>
+      <td>051)239-4861</td>
+      <td>186</td>
+      <td>72</td>
+      <td>101</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10107</th>
+      <td>이광훈</td>
+      <td>huriky</td>
+      <td>4</td>
+      <td>8109131276431</td>
+      <td>1981-09-13</td>
+      <td>055)736-4981</td>
+      <td>175</td>
+      <td>92</td>
+      <td>101</td>
+      <td>9903.0</td>
+      <td>성연희</td>
+      <td>pascal</td>
+      <td>조교수</td>
+      <td>360.0</td>
+      <td>1993-03-17</td>
+      <td>15.0</td>
+      <td>101.0</td>
+    </tr>
+    <tr>
+      <th>10108</th>
+      <td>류민정</td>
+      <td>cleansky</td>
+      <td>2</td>
+      <td>8108192157498</td>
+      <td>1981-08-19</td>
+      <td>055)248-3679</td>
+      <td>162</td>
+      <td>72</td>
+      <td>101</td>
+      <td>9907.0</td>
+      <td>전은지</td>
+      <td>totoro</td>
+      <td>전임강사</td>
+      <td>210.0</td>
+      <td>2001-05-11</td>
+      <td>NaN</td>
+      <td>101.0</td>
+    </tr>
+    <tr>
+      <th>10201</th>
+      <td>김진영</td>
+      <td>simply</td>
+      <td>2</td>
+      <td>8206062186327</td>
+      <td>1982-06-06</td>
+      <td>055)419-6328</td>
+      <td>164</td>
+      <td>48</td>
+      <td>102</td>
+      <td>9905.0</td>
+      <td>권혁일</td>
+      <td>refresh</td>
+      <td>교수</td>
+      <td>450.0</td>
+      <td>1986-02-11</td>
+      <td>25.0</td>
+      <td>102.0</td>
+    </tr>
+    <tr>
+      <th>10202</th>
+      <td>오유석</td>
+      <td>yousuk</td>
+      <td>4</td>
+      <td>7709121128379</td>
+      <td>1977-09-12</td>
+      <td>051)724-9618</td>
+      <td>177</td>
+      <td>92</td>
+      <td>102</td>
+      <td>9905.0</td>
+      <td>권혁일</td>
+      <td>refresh</td>
+      <td>교수</td>
+      <td>450.0</td>
+      <td>1986-02-11</td>
+      <td>25.0</td>
+      <td>102.0</td>
+    </tr>
+    <tr>
+      <th>10203</th>
+      <td>하나리</td>
+      <td>hanal</td>
+      <td>1</td>
+      <td>8501092378641</td>
+      <td>1985-01-09</td>
+      <td>055)296-3784</td>
+      <td>160</td>
+      <td>68</td>
+      <td>102</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10204</th>
+      <td>윤진욱</td>
+      <td>samba7</td>
+      <td>3</td>
+      <td>7904021358671</td>
+      <td>1979-04-02</td>
+      <td>053)487-2698</td>
+      <td>171</td>
+      <td>70</td>
+      <td>102</td>
+      <td>9905.0</td>
+      <td>권혁일</td>
+      <td>refresh</td>
+      <td>교수</td>
+      <td>450.0</td>
+      <td>1986-02-11</td>
+      <td>25.0</td>
+      <td>102.0</td>
+    </tr>
+    <tr>
+      <th>20101</th>
+      <td>이동훈</td>
+      <td>dals</td>
+      <td>1</td>
+      <td>8312101128467</td>
+      <td>1983-12-10</td>
+      <td>055)426-1752</td>
+      <td>172</td>
+      <td>64</td>
+      <td>201</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20102</th>
+      <td>박동진</td>
+      <td>ping2</td>
+      <td>1</td>
+      <td>8511241639826</td>
+      <td>1985-11-24</td>
+      <td>051)742-6384</td>
+      <td>182</td>
+      <td>70</td>
+      <td>201</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20103</th>
+      <td>김진경</td>
+      <td>lovely</td>
+      <td>2</td>
+      <td>8302282169387</td>
+      <td>1983-02-28</td>
+      <td>052)175-3941</td>
+      <td>166</td>
+      <td>51</td>
+      <td>201</td>
+      <td>9902.0</td>
+      <td>이재우</td>
+      <td>sweat413</td>
+      <td>조교수</td>
+      <td>320.0</td>
+      <td>1995-04-12</td>
+      <td>NaN</td>
+      <td>201.0</td>
+    </tr>
+    <tr>
+      <th>20104</th>
+      <td>조명훈</td>
+      <td>rader214</td>
+      <td>1</td>
+      <td>8412141254963</td>
+      <td>1984-12-14</td>
+      <td>02)785-6984</td>
+      <td>184</td>
+      <td>62</td>
+      <td>201</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaT</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2>
+<a id="user-content-필요한-컬럼만-추출" class="anchor" href="#%ED%95%84%EC%9A%94%ED%95%9C-%EC%BB%AC%EB%9F%BC%EB%A7%8C-%EC%B6%94%EC%B6%9C" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>필요한 컬럼만 추출</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">df7</span> <span class="pl-c1">=</span> <span class="pl-s1">df6</span>.<span class="pl-en">filter</span>([<span class="pl-s">'name_x'</span>, <span class="pl-s">'userid_x'</span>, <span class="pl-s">'birthdate'</span>, <span class="pl-s">'name_y'</span>])
+<span class="pl-s1">df7</span></pre></div>
+<div>
+<table border="1">
+  <thead>
+    <tr>
+      <th></th>
+      <th>name_x</th>
+      <th>userid_x</th>
+      <th>birthdate</th>
+      <th>name_y</th>
+    </tr>
+    <tr>
+      <th>studno</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>10101</th>
+      <td>전인하</td>
+      <td>jun123</td>
+      <td>1979-07-02</td>
+      <td>성연희</td>
+    </tr>
+    <tr>
+      <th>10102</th>
+      <td>박미경</td>
+      <td>ansel414</td>
+      <td>1984-05-16</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10103</th>
+      <td>김영균</td>
+      <td>mandu</td>
+      <td>1981-03-21</td>
+      <td>이만식</td>
+    </tr>
+    <tr>
+      <th>10104</th>
+      <td>지은경</td>
+      <td>gomo00</td>
+      <td>1980-04-12</td>
+      <td>전은지</td>
+    </tr>
+    <tr>
+      <th>10105</th>
+      <td>임유진</td>
+      <td>youjin12</td>
+      <td>1983-01-21</td>
+      <td>전은지</td>
+    </tr>
+    <tr>
+      <th>10106</th>
+      <td>서재진</td>
+      <td>seolly</td>
+      <td>1985-11-29</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10107</th>
+      <td>이광훈</td>
+      <td>huriky</td>
+      <td>1981-09-13</td>
+      <td>성연희</td>
+    </tr>
+    <tr>
+      <th>10108</th>
+      <td>류민정</td>
+      <td>cleansky</td>
+      <td>1981-08-19</td>
+      <td>전은지</td>
+    </tr>
+    <tr>
+      <th>10201</th>
+      <td>김진영</td>
+      <td>simply</td>
+      <td>1982-06-06</td>
+      <td>권혁일</td>
+    </tr>
+    <tr>
+      <th>10202</th>
+      <td>오유석</td>
+      <td>yousuk</td>
+      <td>1977-09-12</td>
+      <td>권혁일</td>
+    </tr>
+    <tr>
+      <th>10203</th>
+      <td>하나리</td>
+      <td>hanal</td>
+      <td>1985-01-09</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>10204</th>
+      <td>윤진욱</td>
+      <td>samba7</td>
+      <td>1979-04-02</td>
+      <td>권혁일</td>
+    </tr>
+    <tr>
+      <th>20101</th>
+      <td>이동훈</td>
+      <td>dals</td>
+      <td>1983-12-10</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20102</th>
+      <td>박동진</td>
+      <td>ping2</td>
+      <td>1985-11-24</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>20103</th>
+      <td>김진경</td>
+      <td>lovely</td>
+      <td>1983-02-28</td>
+      <td>이재우</td>
+    </tr>
+    <tr>
+      <th>20104</th>
+      <td>조명훈</td>
+      <td>rader214</td>
+      <td>1984-12-14</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<h2>
+<a id="user-content-컬럼의-이름을-요구사항에-맞게-변경하기" class="anchor" href="#%EC%BB%AC%EB%9F%BC%EC%9D%98-%EC%9D%B4%EB%A6%84%EC%9D%84-%EC%9A%94%EA%B5%AC%EC%82%AC%ED%95%AD%EC%97%90-%EB%A7%9E%EA%B2%8C-%EB%B3%80%EA%B2%BD%ED%95%98%EA%B8%B0" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>컬럼의 이름을 요구사항에 맞게 변경하기</h2>
+<div class="highlight highlight-source-python"><pre><span class="pl-s1">df8</span> <span class="pl-c1">=</span> <span class="pl-s1">df7</span>.<span class="pl-en">rename</span>(<span class="pl-s1">columns</span><span class="pl-c1">=</span>{<span class="pl-s">"name_x"</span>: <span class="pl-s">"학생이름"</span>, <span class="pl-s">"userid_x"</span> : <span class="pl-s">"아이디"</span>, <span class="pl-s">"birthdate"</span>: <span class="pl-s">"생일"</span>, <span class="pl-s">"name_y"</span>: <span class="pl-s">"담당교수"</span>})
+<span class="pl-s1">df8</span>.<span class="pl-en">set_index</span>(<span class="pl-s">'학생이름'</span>, <span class="pl-s1">inplace</span><span class="pl-c1">=</span><span class="pl-c1">True</span>)
+<span class="pl-s1">df8</span>.<span class="pl-en">to_excel</span>(<span class="pl-s">'asdf.xlsx'</span>)</pre></div>
+</article></body></html>
